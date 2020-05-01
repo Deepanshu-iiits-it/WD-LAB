@@ -1,0 +1,27 @@
+<html>
+    <head>
+    <title>Validate</title>
+    <script>
+        function valid()
+        {
+            var username=document.getElementById("uname").value;
+            var regx= /E00/i;
+            if(regx.test(username))
+            {
+                alert("Valid username");
+            }
+            else{
+                alert("Invalid username");
+            }
+        }
+    </script>
+    </head>
+
+    <body>
+        <form action="message.html">
+            <input type="text" id="uname" placeholder="Username">
+            <button onclick="valid()" type="button">Submit</button>
+        </form>
+    </body>
+    
+</html>
