@@ -7,11 +7,11 @@
 </style>
 <script type="text/javascript">
 var value;
-document.write("On rolling a dice for 30 times:<br>");
+document.write("<h2>On rolling a dice for 30 times:</h2><ol>");
 for(value=0;value<30;value++)
 {
     var result=Math.floor(1+Math.random()*6);
-    document.write(value+1 + "th result of dice: " + result + "<br>");
+    document.write("<li> <b>" + result + "</b></li>");
 
 }
 
