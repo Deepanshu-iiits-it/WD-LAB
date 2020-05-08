@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>cook</title>
+        <script>
+            function doc()
+            {
+                var n=document.getElementById("name").value;
+                if(n=="")
+                {
+                    alert("Enter the name");
+                    return;
+                }
+            document.cookie=n;
+            document.write("name stored as cookie "+n);
+            // document.cookie="abc@gmail.com";
+        
+            }
+            </script>
+    </head>
+    <body>
+        <h1>Cookies</h1>
+        <form>
+        <input type="text" id="name" placeholder="name" required>
+        <input type="submit" onclick="doc()">
+        </form>
+    </body>
+</html>
