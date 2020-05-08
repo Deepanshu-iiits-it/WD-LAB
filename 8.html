@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Error handling</title>
+        <script>
+
+            function err()
+            {
+                var a=26;
+                try
+                {
+                    var b=a.uppercase();
+                    document.write("uppercase of "+a+" is "+b+"<br>");
+                }
+                catch(e)
+                {
+                    document.write("some error occured<br>");
+
+                }
+                finally
+                {
+                    document.write("this block will always execute");
+                }
+                
+                
+            }
+        </script>
+    </head>
+    <body>
+        <h3>Try and Catch block</h3>
+        <script>
+            
+            err();
+        </script>
+    </body>
+</html>
